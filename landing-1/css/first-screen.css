@@ -1,0 +1,223 @@
+.first-screen{
+    margin-top: 4.38rem;
+    padding: 6.8rem 0 6.9rem 0;
+    width: 100%;
+    background: url('../img/bg/first-screen_bg.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.first-screen::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .55);
+    width: 100%;
+    height: 100%;
+}
+
+.first-screen__row{
+    margin: 0 -15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-screen__left{
+    margin: 0 15px;
+    width: 70%;
+}
+
+.first-screen__right{
+    margin: 0 15px;
+    width: 30%;
+}
+
+.first-screen__name{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 3.75rem;
+    font-weight: 100;
+    line-height: 70px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.name-color{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 3.75rem;
+    font-weight: 100;
+    line-height: 4.375rem;
+    text-transform: uppercase;
+    color: #f56060;
+}
+
+.first-screen__title{
+    margin-top: 32px;
+    width: 70%;
+    color: #ffffff;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+    text-transform: uppercase;
+}
+
+.first-screen__title::after{
+    content: '';
+    display: block;
+    width: 64px;
+    height: 2px;
+    margin: 25px 0 0 0;
+    background-color: #ffffff;
+}
+
+.first-screen__descr{
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.875rem;
+    font-weight: normal;
+    margin-top: 30px;
+    color: #ffffff;
+}
+
+.first-screen__btn{
+    display: block;
+    margin: 39px 0 0 0;
+    padding: 0.68rem 1.63rem;
+    width: fit-content;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    border: 1px solid #FFFFFF;
+    color:#ffffff;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 0;
+    transition: 0.5s ease-out;
+}
+
+.first-screen__btn:hover{
+    background-color: #f88621;
+    border: 1px solid #333333;
+    color:#ffffff;
+}
+
+.first-screen__right{
+    width: 23rem;
+    height: 100%;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+.first-screen__form{height: 100%;}
+
+.form-content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.input-block{
+    padding: 0 3.75rem;
+    margin-top: 1.25rem;
+}
+
+.input-block input{
+    height: 1.56rem;
+    padding: 5px;
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid #BDBDBD;
+    outline: none;
+}
+.input-block label{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 1.19rem;
+    text-align: center;
+    color: #BDBDBD;
+}
+
+.form-title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding: 1.19rem 0;
+    text-align: center;
+    color: #333333;
+}
+
+.form-title span{
+    color: #f56060;
+    text-transform: uppercase;
+}
+
+.form-btn{
+    background: #f56060;
+    border-radius: 0px 0px 8px 8px;
+    border: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 3.8rem;
+    padding: 1rem 0;
+}
+
+.form-btn:hover{
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1100px){
+    .first-screen__left{
+        width: 50%;
+    }
+    .first-screen__right{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .first-screen{
+        padding: 5.5rem 0 5rem 0;
+        margin-top: 0;
+    }
+    .first-screen__row{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+    .first-screen__left{
+        width: 72%;
+    }
+    .first-screen__right{
+        margin-top: 50px;
+        width: 72%;
+    }
+    .first-screen__btn{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px){
+    html{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 544px){
+   .first-screen__title{
+       width: 100%;
+   }
+}

@@ -1,0 +1,106 @@
+.pricing{
+    background-color: #E5E5E5;
+    padding: 5rem 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.prising__block{
+    margin: 70px -15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    justify-content: space-around;
+}
+
+.prising__card{
+    text-align: center;
+    margin: 0 15px;
+    width: 22.5rem;
+    transition: 0.2s ease-in;
+}
+
+.prising__card:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 15px 15px -10px rgba(0,0,0, .5);
+}
+
+.list__item{
+    margin-top: 2px;
+    background-color: #fff;
+    color: #86878B;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 3rem;
+}
+
+.free:hover{
+    background-color: #f88621;
+}
+
+.rate{
+    background-color: #333333;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.25rem;
+    line-height: 2.9rem;
+}
+
+.sum{
+    background-color: #333333;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 2.19rem;
+    line-height: 6rem;
+    font-family: 'Raleway';
+}
+
+.free{
+    background-color: #333333;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 3rem;
+}
+
+
+@media screen and (max-width: 1200px){
+    .prising__card{
+        margin-top: 50px;
+        width: 45%;
+    }
+ }
+
+ @media screen and (max-width: 992px){
+    .prising-card{
+        width: 42%;
+        flex-grow: 0;
+        margin-top: 50px;
+    }
+
+    .prising-card:last-child{
+        margin-top: 50px;
+        width: 45%;
+    }
+ }
+
+
+ @media screen and (max-width: 768px){
+     html{
+         font-size: 14px;
+     }
+    .prising__card{
+        width: 72%;
+    }
+ }
+ 
+ @media screen and (max-width: 600px){
+    .pricing{
+        margin-top: 70px;
+    }
+    .prising__block{
+        margin-top: 0;
+    }
+    .prising__card{
+        width: 72%;
+    }
+ }

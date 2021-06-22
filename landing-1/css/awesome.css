@@ -1,0 +1,95 @@
+.awesome{
+    padding: 6.25rem 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.advantages{
+    margin: 4rem -15px 0;
+    display: flex;
+    flex-basis: auto;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.advantages__block{
+    text-align: center;
+    margin: 0 15px;
+    width: 30%;
+}
+
+.advantages__circle{
+    border-radius: 50%;
+    border: 1px solid #f88621;
+    width: 4.375rem;
+    height: 4.375rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Font Awesome 5 Free";
+    font-size: 1.875rem;
+    font-weight: 600;
+    color: #f88621;
+}
+
+.advantages__title{
+    margin-top: 1.875rem;
+    color: #333333;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.advantages__descr{
+    font-size: 0.875rem;
+    color: #000000;
+    margin-top: 1rem;
+    font-weight: 400;
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 1200px){
+   .advantages__block{
+       margin-top: 50px;
+       width: 40%;
+   }
+}
+
+@media screen and (max-width: 900px){
+    .advantages__block{
+        width: 45%;
+    }
+    .awesome{
+        padding: 5rem 0 5rem 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+    html{
+        font-size: 14px;
+    }
+    .advantages__descr{
+        font-size: 14px;
+    }
+    .advantages{
+        margin-top: 0;
+    }
+    .advantages__block{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .advantages__block{
+        width: 72%;
+    }
+}
+
+ @media screen and (max-width: 544px){
+    .awesome{
+        padding: 0;
+    }
+    .advantages__block{
+        width: 72%;
+    }
+ }

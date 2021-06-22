@@ -1,0 +1,139 @@
+.social{
+    padding: 15px 0;
+    background-color: #F8EFEF;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.social-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.social__descr, .social-group{
+    margin: 0 15px;
+}
+
+.social__descr{
+    width: 40%;
+}
+
+.social-group{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social__title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.25rem;
+    line-height: 1.68rem;
+    color: #333333;
+    margin-bottom: 14px;
+}
+
+.social__text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 1.19rem;
+    color: #86878B;
+}
+
+.social-group__item{
+   margin-left: 3rem;
+}
+
+.social-group__item:first-child{
+    margin-left: 0;
+}
+
+.fab{
+    font-size: 2.7rem;
+}
+
+.fas{
+    font-family: "Font Awesome 5 Free";
+    font-size: 2.7rem;
+}
+
+.social-group__link{
+    color: #86878B;
+    transition: all ease 0.5s;
+}
+
+.social-group__link:hover{
+  transform: scale(1.2);
+}
+
+.social-group__link:hover.facebook {
+  color: #3b5998;
+}
+
+.social-group__link:hover.twitter {
+  color: #00acee;
+}
+
+.social-group__link:hover.googlePlus{
+  color: #db4a39;
+}
+
+.social-group__link:hover.pinterest{
+  color: #E60023;
+}
+
+.social-group__link:hover.instagram {
+  color: #8a3ab9;
+}
+
+.social-group__link:hover.stumbleupon{
+  color: #eb4924;
+}
+
+.social-group__link:hover.wifi {
+  color: #1DB954;
+}
+
+@media screen and (max-width: 1200px){
+    .social-row{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }    
+    .social-group{
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    .social__descr{
+        margin-left: 0;
+        text-align: center;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    html{
+        font-size: 14px;
+    }
+    .social-group__item{
+        margin-left: 2rem;
+    }
+ }
+
+ @media screen and (max-width: 544px){
+    .social-group{
+        flex-wrap: wrap;
+        margin: 15px;
+        width: 90%;
+     }
+    .fas{
+        font-size: 1.7rem;
+        margin-top: 0;
+    }
+    .fab{
+        font-size: 1.7rem;
+    }
+ }

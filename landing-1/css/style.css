@@ -1,0 +1,76 @@
+@import url(../css/header.css);
+@import url(../css/first-screen.css);
+@import url(../css/social.css);
+@import url(../css/tabs.css);
+@import url(../css/awesome.css);
+@import url(../css/pricing.css);
+@import url(../css/customers.css);
+@import url(../css/axure.css);
+@import url(../css/contact.css);
+@import url(../css/footer.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+*:before, *:after{
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.title{
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: normal;
+    color: #212121;
+    text-transform: uppercase;
+}
+
+.title::after {
+    content: '';
+    display: block;
+    width: 4rem;
+    height: 2px;
+    margin: 25px auto 0;
+    background-color: #f88621;
+}
+
+.descr{
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: normal;
+    margin-top: 30px;
+    color: #86878B;;
+}
+
+.fab {
+  transition: transform ease 0.5s;
+}
+
+.fas {
+  transition: transform ease 0.5s;
+}
+
+.fab:hover {
+  transform: scale(1.2);
+}
+
+.fas:hover{
+  transform: scale(1.2);
+}
+
+.fas.fa-bolt:hover{
+  transform: scale(1);
+}
